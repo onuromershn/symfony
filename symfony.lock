@@ -14,6 +14,9 @@
     "doctrine/lexer": {
         "version": "1.2.3"
     },
+    "monolog/monolog": {
+        "version": "1.27.0"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -34,6 +37,21 @@
         "files": [
             "./config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "sensiolabs/security-checker": {
+        "version": "6.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.0",
+            "ref": "160c9b600564faa1224e8f387d49ef13ceb8b793"
+        },
+        "files": [
+            "./config/packages/security_checker.yaml"
+        ]
+    },
+    "symfony/asset": {
+        "version": "v4.4.40"
     },
     "symfony/cache": {
         "version": "v4.4.40"
@@ -59,6 +77,18 @@
     },
     "symfony/debug": {
         "version": "v4.4.37"
+    },
+    "symfony/debug-bundle": {
+        "version": "4.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.1",
+            "ref": "0ce7a032d344fb7b661cd25d31914cd703ad445b"
+        },
+        "files": [
+            "./config/packages/dev/debug.yaml"
+        ]
     },
     "symfony/dependency-injection": {
         "version": "v4.4.40"
@@ -117,6 +147,9 @@
             "./src/Kernel.php"
         ]
     },
+    "symfony/http-client": {
+        "version": "v4.4.40"
+    },
     "symfony/http-client-contracts": {
         "version": "v2.5.1"
     },
@@ -128,6 +161,24 @@
     },
     "symfony/mime": {
         "version": "v4.4.37"
+    },
+    "symfony/monolog-bridge": {
+        "version": "v4.4.37"
+    },
+    "symfony/monolog-bundle": {
+        "version": "3.7",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "2120e71a370db3a494b8afcc42d7cfb2cff6f910"
+        },
+        "files": [
+            "./config/packages/dev/monolog.yaml",
+            "./config/packages/prod/deprecations.yaml",
+            "./config/packages/prod/monolog.yaml",
+            "./config/packages/test/monolog.yaml"
+        ]
     },
     "symfony/polyfill-intl-idn": {
         "version": "v1.25.0"
@@ -170,11 +221,48 @@
     "symfony/service-contracts": {
         "version": "v2.5.1"
     },
+    "symfony/stopwatch": {
+        "version": "v4.4.38"
+    },
+    "symfony/translation-contracts": {
+        "version": "v2.5.1"
+    },
+    "symfony/twig-bridge": {
+        "version": "v4.4.40"
+    },
+    "symfony/twig-bundle": {
+        "version": "4.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.4",
+            "ref": "73baff3f7b3cea12a73812a7cfd2c0924a9e250f"
+        },
+        "files": [
+            "./config/packages/test/twig.yaml",
+            "./config/packages/twig.yaml",
+            "./templates/base.html.twig"
+        ]
+    },
     "symfony/var-dumper": {
         "version": "v4.4.39"
     },
     "symfony/var-exporter": {
         "version": "v4.4.40"
+    },
+    "symfony/web-profiler-bundle": {
+        "version": "4.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.3",
+            "ref": "6bdfa1a95f6b2e677ab985cd1af2eae35d62e0f6"
+        },
+        "files": [
+            "./config/packages/dev/web_profiler.yaml",
+            "./config/packages/test/web_profiler.yaml",
+            "./config/routes/dev/web_profiler.yaml"
+        ]
     },
     "symfony/web-server-bundle": {
         "version": "4.4",
@@ -187,5 +275,11 @@
     },
     "symfony/yaml": {
         "version": "v4.4.37"
+    },
+    "twig/extra-bundle": {
+        "version": "v3.3.8"
+    },
+    "twig/twig": {
+        "version": "v3.3.10"
     }
 }
